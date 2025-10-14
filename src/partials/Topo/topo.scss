@@ -1,0 +1,179 @@
+@use "../../styles/colors.scss" as *;
+
+header {
+  position: relative;
+  z-index: 999;
+
+  .topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    color: rgb(63, 63, 63);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    z-index: 3;
+
+    &.fixed {
+      position: fixed;
+      top: 0;
+      transition: all 0.3s ease;
+      animation: scrollNavbar 0.5s normal;
+
+      @keyframes scrollNavbar {
+        from {
+          transform: translateY(-100px);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      .topo-contato {
+        display: none;
+      }
+    }
+
+    .topo-contato {
+      display: flex;
+      width: 100%;
+      background-color: rgb(196, 144, 255);
+      color: white;
+      justify-content: center;
+      padding: 10px 20px;
+      z-index: 2;
+
+      .base {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        width: 100%;
+
+        @media (max-width: 400px) {
+          gap: 20px;
+        }
+
+        a {
+          font-family: var(--font-poppins);
+          font-size: 15px;
+          display: flex;
+          justify-content: center;
+          gap: 5px;
+          letter-spacing: 1px;
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: $color-light-purple-5;
+            transition: all 0.3s ease;
+          }
+          
+          svg {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+
+    .topo-menu {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      padding: 10px 0px;
+      z-index: 4;
+      background-color: rgb(250, 250, 250);
+      box-shadow: 0px 5px 20px 2px rgba(30, 64, 80, 0.336);
+
+      .base {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+        a {
+          img {
+            @media (max-width: 768px) {
+              width: 180px;  // Aumentando um pouco para dispositivos móveis
+              height: 60px;  // Aumentando proporcionalmente
+            }
+          }
+        }
+
+        .topo-links {
+          display: flex;
+          list-style: none;
+          gap: 10px;
+          align-items: center;
+          justify-content: space-around;
+          font-family: var(--font-poppins);
+          letter-spacing: 1px;
+
+          @media (max-width: 768px) {
+            display: none;
+          }
+
+          .topo-item {
+            a {
+              font-size: 20px;
+              transition: all 0.3s ease;
+              padding: 5px 10px;
+
+              &:hover {
+                color: $color-light-purple-5;
+                transition: all 0.3s ease;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .menu-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; // 🔥 Alterado de absolute para fixed
+    top: -100vh;
+    height: 100vh;
+    width: 100%;
+    background-color: #394d7296;
+    backdrop-filter: blur(20px);
+    transition: all 0.3s ease;
+    z-index: 2;
+
+    @media (min-width: 769px) {
+      display: none;
+    }
+
+    .topo-links-mobile {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      flex-direction: column;
+
+      li {
+        a {
+          font-size: 23px;
+          font-family: var(--font-josefin);
+          font-weight: 600;
+        }
+      }
+    }
+
+    &.open {
+      top: 0;
+    }
+
+    &.open .topo-menu {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 10px 20px;
+      z-index: 2;
+      background-color: #2525253f;
+      box-shadow: 0 5px 20px 2px #00000041;
+    }
+  }
+}

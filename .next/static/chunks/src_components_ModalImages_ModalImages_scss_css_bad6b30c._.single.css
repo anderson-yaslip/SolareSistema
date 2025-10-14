@@ -1,0 +1,97 @@
+/* [project]/src/components/ModalImages/ModalImages.scss.css [app-client] (css) */
+.modal {
+  z-index: 999;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .75);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal .container {
+  cursor: default;
+  background-color: rgba(0, 0, 0, 0);
+  width: 90%;
+  height: 90%;
+  position: relative;
+}
+
+.modal .container img {
+  object-fit: contain;
+  border-radius: 10px;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: 100% I !important;
+}
+
+@media (max-height: 775px) {
+  .modal .container img {
+    max-height: 450px;
+  }
+}
+
+.modal .container .closeModal {
+  color: #000;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  transition: all .3s;
+  display: flex;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+
+.modal .container .closeModal:hover {
+  color: #fff;
+  background-color: #1ac3cf;
+}
+
+.dropdown {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+  background: #fff;
+  border: 1px solid #ccc;
+  min-width: 220px;
+  transition: all .3s;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+}
+
+.dropdown button {
+  text-align: left;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  width: 100%;
+  padding: .75rem 1rem;
+  text-align: center !important;
+  border-radius: 0 !important;
+}
+
+.dropdown button:hover, .dropdown button.actived {
+  background-color: #f2f2f2;
+}
+
+.dropdown.ativo {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=src_components_ModalImages_ModalImages_scss_css_bad6b30c._.single.css.map*/

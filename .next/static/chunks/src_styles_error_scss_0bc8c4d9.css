@@ -1,0 +1,20 @@
+/* [project]/src/styles/error.scss.css [app-client] (css) */
+.error-404 {
+  min-height: 30vh;
+  font-family: var(--font-poppins);
+  text-align: center;
+  letter-spacing: 1px;
+  color: #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 200px 0 50px;
+  display: flex;
+}
+
+.error-404 .botao-contato {
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=src_styles_error_scss_0bc8c4d9.css.map*/
