@@ -14,7 +14,8 @@ footer {
     align-items: stretch;
     line-height: 30px;
 
-    .menuFooter, .contactFooter {
+    .menuFooter,
+    .contactFooter {
       ul {
         li {
           @media (max-width: 768px) {
@@ -80,7 +81,7 @@ footer {
       font-size: 24px;
       font-weight: 800;
       font-family: var(--font-josefin);
-      color: $color-dark-purple;
+      color: #000;
     }
 
     .logoFooter {
