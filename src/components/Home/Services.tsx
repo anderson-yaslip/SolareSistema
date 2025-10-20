@@ -2,7 +2,6 @@
 
 import { FaCar, FaCarBurst, } from "react-icons/fa6";
 import { IoCarSport } from "react-icons/io5";
-import { GiPoliceCar } from "react-icons/gi";
 import { BsCarFrontFill } from "react-icons/bs";
 
 export default function Services() {
@@ -25,10 +24,6 @@ export default function Services() {
           <div className="service-item">
             <BsCarFrontFill />
             <p>Serviço 4</p>
-          </div>
-          <div className="service-item">
-            <GiPoliceCar />
-            <p>Serviço 5</p>
           </div>
         </div>
       </div>

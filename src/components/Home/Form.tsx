@@ -39,7 +39,7 @@ export default function Form() {
           </div>
         </div>
         <ContactForm variation="contato-form-included" />
-      </div>
+      </div>  
     </div>
   );
 }

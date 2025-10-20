@@ -28,7 +28,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: darken($color-purple-2, 5%);
+      background-color: $color-purple-3;
     }
   }
 }

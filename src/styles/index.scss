@@ -68,17 +68,41 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    gap: 10px;
+    gap: 15px;
     padding: 10px 20px;
 
-    h2 {
-      font-size: 3rem;
-      color: $color-light-purple-5;
-    }
+    .texto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 15px;
+      max-width: 800px;
+      h2 {
+        font-size: 3rem;
+        color: #fff;
+        padding: 10px 50px;
+        border-radius: 50px;
+      }
 
-    p {
-      font-size: 1.2rem;
-      max-width: 500px;
+      p {
+        font-size: 1.2rem;
+        max-width: 500px;
+      }
+
+      a {
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-family: var(--font-open-sans);
+        border-radius: 10px;
+        background-color: $color-purple-2;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: $color-purple-3;
+        }
+      }
     }
 
     &.banner-1 {
@@ -116,8 +140,8 @@
   /* Customizações Slider */
   .swiper-button-prev,
   .swiper-button-next {
-    color: #fff; 
-    background: rgba(0, 0, 0, 0.4); 
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -170,7 +194,7 @@
       text-align: center;
 
       svg {
-        color: $color-light-purple-3;
+        color: #fff;
         font-size: 80px;
       }
 
