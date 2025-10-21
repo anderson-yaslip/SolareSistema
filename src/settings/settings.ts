@@ -32,9 +32,10 @@ export const settings: SiteSettings = {
     urlMaps: "https://maps.app.goo.gl/caH1G5Rs1tBdgBRw9",
     rua: "Rua Exemplo",
     numero: "123",
-    cidade: "São Paulo",
+    cidade: "Guarulhos",
     estado: "SP",
     cep: "00000-000",
+    mapaEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.5634247020407!2d-49.1179347!3d-23.404005899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c16b54bc792c4f%3A0xc9902ef74e192f3b!2sLand%20Santa%20Cristina%20III!5e0!3m2!1sen!2sbr!4v1741628245149!5m2!1sen!2sbr",
   },
   openGraph: {
     url,

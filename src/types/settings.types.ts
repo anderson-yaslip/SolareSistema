@@ -17,6 +17,7 @@ export interface SiteSettings {
     cidade: string;
     urlMaps: string;
     estado: string;
+    mapaEmbed: string;
     cep: string;
   };
   openGraph: {

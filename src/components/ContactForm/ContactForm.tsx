@@ -5,7 +5,7 @@ import { ResponseData, FormData } from "@/types";
 import "@/styles/formulario.scss";
 
 const { siteName, emailDestinatario } = settings;
-const RECAPTCHA_SITE_KEY = "6LdzZvAqAAAAACIdoEUtHKHYYNNwIyDVODykjcpn"; // 🔹 Substituir pela chave do site reCAPTCHA
+const RECAPTCHA_SITE_KEY = "6LdzZvAqAAAAACIdoEUtHKHYYNNwIyDVODykjcpn"; // Substituir pela chave do site reCAPTCHA
 
 export default function ContactForm({ variation }: { variation: string }) {
   const [formData, setFormData] = useState<FormData>({
@@ -38,7 +38,7 @@ export default function ContactForm({ variation }: { variation: string }) {
     document.body.appendChild(script);
 
     script.onload = () => {
-      // console.log("✅ reCAPTCHA carregado!");
+      // console.log("reCAPTCHA carregado!");
       setRecaptchaLoaded(true);
     };
   };
@@ -113,9 +113,9 @@ export default function ContactForm({ variation }: { variation: string }) {
         body: JSON.stringify(backupData),
       });
 
-      setMessage("✅ Email enviado com sucesso, aguarde o retorno!");
+      setMessage("Email enviado com sucesso, aguarde o retorno!");
     } catch (error) {
-      console.error("❌ Erro:", error);
+      console.error("Erro:", error);
       setMessage("Erro ao enviar email.");
     } finally {
       setLoading(false);
