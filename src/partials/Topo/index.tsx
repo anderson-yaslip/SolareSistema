@@ -70,7 +70,7 @@ export default function Topo() {
                 <Link href="/">Home</Link>
               </li>
               <li className="topo-item">
-                <Link href="/contato">Sobre nós</Link>
+                <Link href="/sobre-nos">Sobre nós</Link>
               </li>
               <li className="topo-item">
                 <Link href="/pagina-exemplo">Exemplo</Link>
@@ -92,7 +92,7 @@ export default function Topo() {
             <Link href="/">Home</Link>
           </li>
           <li className="topo-item">
-            <Link href="/contato">Sobre nós</Link>
+            <Link href="/sobre-nos">Sobre nós</Link>
           </li>
           <li className="topo-item">
             <Link href="/pagina-exemplo">Exemplo</Link>

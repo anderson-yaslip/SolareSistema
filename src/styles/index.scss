@@ -28,31 +28,92 @@
   }
 }
 
-.span-content {
-  font-family: var(--font-open-sans);
-  font-size: 0.9rem;
-  font-weight: 500;
-  padding-left: 30px;
-  position: relative;
+.first {
   display: flex;
+  justify-content: center;
   align-items: center;
+  .base {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    color: black;
+    font-family: var(--font-poppins);
 
-  &::before {
-    position: absolute;
-    content: "";
-    height: 90%;
-    width: 3px;
-    left: 0;
-    background-color: $color-purple-3;
-
-    @media (max-width: 500px) {
-      left: -10px;
+    @media (max-width: 768px) {
+      gap: 50px;
+      flex-direction: column;
     }
-  }
 
-  @media (max-width: 500px) {
-    text-align: justify;
-    padding-left: 0;
+    .left {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      .texto {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        @media (max-width: 425px) {
+          text-align: center;
+        }
+
+        p {
+          font-size: 20px;
+          line-height: 25px;
+        }
+
+        .botoes {
+          display: flex;
+          gap: 20px;
+
+          @media (max-width: 768px) {
+            justify-content: center;
+            align-items: center;
+          }
+
+          a {
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-family: var(--font-open-sans);
+            border-radius: 10px;
+            color: white;
+            background-color: $color-purple-2;
+            transition: all 0.3s ease;
+
+            &:hover {
+              background-color: $color-purple-3;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      img {
+        width: 90%;
+        height: 90%;
+        min-height: 400px;
+
+        @media (max-width: 768px) {
+          width: 100%;
+          min-height: auto;
+        }
+      }
+    }
   }
 }
 
