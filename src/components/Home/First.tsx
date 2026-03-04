@@ -1,40 +1,52 @@
 "use client";
 
-import Image from "next/image";
+import { MoveUpRight } from "lucide-react";
+import "../../styles/index.scss";
 
 export default function First() {
+
   return (
     <>
-      <div className="first">
-        <div className="base">
-          <div className="left">
-            <div className="texto">
-              <span>Descubra novas possibilidades</span>
-              <h1>A inovação que transforma o seu dia a dia</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-                perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium. Curabitur ac urna sed erat
-                lacinia tristique. Nullam tempor, nisl non vehicula sodales,
-                lorem nisi vestibulum nunc, sit amet sagittis justo odio a
-                justo.
-              </p>
-              <div className="botoes">
-                <a href="">Lorem ipsum</a>
-                <a href="">Lorem ipsum</a>
-              </div>
-            </div>
+      <section className="primeira-sessao">
+        <div className="conteudo-principal">
+
+          <div className="containerSelo">
+            <span className="selo-verde">• benefícios reais da energia solar</span>
           </div>
-          <div className="right">
-            <Image
-              src="/siteBase/right.jpg"
-              alt="Description"
-              width={600}
-              height={400}
-            />
+
+          <h1>
+            Invista em energia solar e <strong>garanta economia</strong>, segurança e independência energética para sua casa ou empresa.
+          </h1>
+
+          <div className="lista-cartoes">
+
+            <div className="cartao">
+              <h3>Economia Garantida</h3>
+              <p>Reduza sua conta de energia em até 95% e comece a economizar já no primeiro mês.</p>
+              <a href="" className="botaoSeta">
+                <MoveUpRight size={20} />
+              </a>
+            </div>
+
+            <div className="cartao">
+              <h3>Proteção contra Reajustes</h3>
+              <p>As tarifas de energia sobem todos os anos. Com energia solar, você se protege dos aumentos.</p>
+              <a href="" className="botaoSeta">
+                <MoveUpRight size={20} />
+              </a>
+            </div>
+
+            <div className="cartao cartao-destaque">
+              <h3>Valorização e Oportunidade</h3>
+              <p>Seu imóvel ganha valor no mercado e você ainda pode transformar energia solar em lucro.</p>
+              <a href="" className="botaoSeta">
+                <MoveUpRight size={20} />
+              </a>
+            </div>
+
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

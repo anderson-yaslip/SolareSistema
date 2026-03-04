@@ -1,0 +1,203 @@
+.containerThree {
+    width: 96%;
+    margin: 0 auto;
+    border-radius: 2rem;
+    height: auto;
+    background-color: #92bda8;
+    padding: 5rem 2rem;
+    color: white;
+    overflow: hidden;
+
+    .faq {
+        width: 80%;
+        margin: 2rem auto 0;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+
+        @media screen and (min-width: 320px) and (max-width: 500px) {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            color: #000;
+        }
+
+        .item {
+            border-bottom: 1px solid rgb(26, 127, 90);
+            padding: 15px 0;
+
+            .pergunta {
+                width: 100%;
+                background: none;
+                border: none;
+                padding: 0;
+                font-size: 1.2rem;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                font-weight: 600;
+                font-family: 'Nunito', sans-serif;
+                letter-spacing: 1px;
+                text-align: left;
+
+                .seta {
+                    transition: 0.3s;
+                    width: 12px;
+                    height: 12px;
+                    border-right: 2px solid #000;
+                    border-bottom: 2px solid #000;
+                    transform: rotate(45deg);
+                }
+            }
+
+            .resposta {
+                max-height: 0;
+                overflow: hidden;
+                transition: 0.3s ease;
+                font-family: 'Montserrat', sans-serif;
+
+                p {
+                    margin-top: 10px;
+                    font-size: 1rem;
+                    opacity: 0.8;
+                }
+            }
+
+            &.ativo {
+                .resposta {
+                    max-height: 200px;
+                }
+
+                .seta {
+                    transform: rotate(-135deg);
+                }
+            }
+        }
+    }
+
+    .containerSeloThree {
+        width: 100%;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        transition: .3s ease-in-out;
+
+        @media screen and (min-width: 320px) and (max-width: 768px) {
+            justify-content: center;
+        }
+
+        .selo-verde {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1.2rem;
+            background-color: #fff;
+            // color: #1a7f5a;
+            color: #000;
+            font-size: 0.8rem;
+            border-radius: 20px;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            border: 1px solid #1a7f5a;
+        }
+    }
+
+    .containerLink {
+        background-color: #4c8569;
+        height: 200px;
+        margin: 3rem auto 0;
+        width: 100%;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1.5rem;
+
+        div {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 1rem;
+
+            p {
+                width: 70%;
+                font-family: 'Nunito', sans-serif;
+                font-size: 1.5rem;
+                line-height: 1.4;
+            }
+
+            a {
+                background-color: #c76b4a;
+                border-radius: 4rem;
+                padding: 1rem 3rem;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.2rem;
+                transition: .3s ease-in-out;
+                font-weight: 400;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        @media (max-width: 900px) {
+            div {
+                justify-content: space-between;
+
+                p {
+                    width: 60%;
+                    font-size: 1.3rem;
+                }
+
+                a {
+                    padding: .8rem 2.4rem;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        @media (max-width: 650px) {
+            height: auto;
+            padding: 2rem 1.5rem;
+
+            div {
+                flex-direction: column;
+                text-align: center;
+
+                p {
+                    width: 100%;
+                    font-size: 1.2rem;
+                }
+
+                a {
+                    margin-top: 1.5rem;
+                    padding: .9rem 2.5rem;
+                }
+            }
+        }
+
+        @media (max-width: 420px) {
+            div {
+                p {
+                    font-size: 1.1rem;
+                }
+
+                a {
+                    padding: .8rem 2rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

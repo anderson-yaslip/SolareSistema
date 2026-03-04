@@ -10,10 +10,12 @@ header {
     align-items: center;
     position: absolute;
     color: rgb(63, 63, 63);
-    background-color: rgb(255, 255, 255);
     width: 100%;
     z-index: 3;
 
+    /* ==============================
+       FIXED
+    ============================== */
     &.fixed {
       position: fixed;
       top: 0;
@@ -24,6 +26,7 @@ header {
         from {
           transform: translateY(-100px);
         }
+
         to {
           transform: translateY(0);
         }
@@ -32,38 +35,79 @@ header {
       .topo-contato {
         display: none;
       }
+
+      /* Desktop: logo aparece apenas no fixed */
+      .topo-menu .base .logo-wrapper {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+
+      .topo-menu {
+        padding: 1rem;
+        width: 80%;
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1000px) {
+          width: 95%;
+        }
+
+        .base {
+          @media screen and (min-width: 769px) and (max-width: 1000px) {
+            gap: 0;
+          }
+        }
+      }
     }
 
+    /* ==============================
+       CONTATO
+    ============================== */
     .topo-contato {
       display: flex;
-      width: 100%;
-      background-color: $color-purple-3;
       color: white;
       justify-content: center;
-      padding: 10px 20px;
+      padding: 6px;
       z-index: 2;
+      background-color: #92bda8;
+      width: min(90%, 1200px);
+      margin-left: auto;
+      transition: .3s ease-in-out;
 
-      @media (max-width: 725px) {
+      @media (max-width: 768px) {
         display: none;
+      }
+
+      @media screen and (min-width: 769px) and (max-width: 1000px) {
+        width: 90%;
+      }
+
+      @media screen and (min-width: 1001px) and (max-width: 1100px) {
+        width: 84%;
+      }
+
+      
+      @media screen and (min-width: 1101px) and (max-width: 1560px) {
+        width: 64%;
       }
 
       .base {
         display: flex;
         justify-content: center;
-        gap: 50px;
+        gap: clamp(20px, 4vw, 50px);
         width: 100%;
 
-        @media (max-width: 400px) {
-          gap: 20px;
-        }
-
         a {
-          font-family: var(--font-poppins);
-          font-size: 15px;
+          font-family: 'Nunito', sans-serif;
+          font-size: clamp(12px, 1vw, 14px);
           display: flex;
           justify-content: center;
           gap: 5px;
-          letter-spacing: 1px;
+          letter-spacing: 2px;
           transition: all 0.2s ease-in;
 
           &:hover {
@@ -77,37 +121,72 @@ header {
       }
     }
 
+    /* ==============================
+       MENU
+    ============================== */
     .topo-menu {
       display: flex;
-      width: 100%;
-      justify-content: space-around;
-      padding: 10px 0px;
+      justify-content: center;
       z-index: 4;
-      background-color: rgb(250, 250, 250);
+      background-color: #fff;
       box-shadow: 0px 5px 20px 2px rgba(30, 64, 80, 0.336);
+      width: min(95%, 1300px);
+      margin-left: auto;
+      border-radius: 4rem 0 0 4rem;
+      // padding: clamp(1rem, 2vw, 2rem);
+      padding: 2rem;
+      transition: .3s ease-in-out;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        border-radius: 0;
+      }
+
+      @media screen and (min-width: 1001px) and (max-width: 1100px) {
+        width: 90%;
+      }
+
+      @media screen and (min-width: 1101px) and (max-width: 1560px) {
+        width: 70%;
+      }
 
       .base {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         width: 100%;
+        gap: clamp(1rem, 3vw, 3rem);
 
-        a {
-          img {
-            @media (max-width: 768px) {
-              width: 180px; // Aumentando um pouco para dispositivos móveis
-              height: 60px; // Aumentando proporcionalmente
-            }
+        /* ==============================
+           LOGO
+        ============================== */
+        .logo-wrapper {
+          display: none;
+          opacity: 0;
+          transform: translateY(-10px);
+          transition: all 0.4s ease;
+          pointer-events: none;
+
+          @media (max-width: 768px) {
+            display: flex;
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
           }
+        }
+
+        a img {
+          width: clamp(140px, 12vw, 200px);
+          height: auto;
         }
 
         .topo-links {
           display: flex;
           list-style: none;
-          gap: 10px;
           align-items: center;
-          justify-content: space-around;
-          font-family: var(--font-poppins);
+          justify-content: center;
+          gap: clamp(1rem, 3vw, 4rem);
+          flex-wrap: nowrap;
 
           @media (max-width: 768px) {
             display: none;
@@ -115,38 +194,47 @@ header {
 
           .topo-item {
             a {
-              font-size: 18px;
+              font-size: clamp(0.85rem, 1vw, 1rem);
               transition: all 0.3s ease;
               padding: 5px 10px;
-              font-weight: 500;
+              font-weight: 400;
+              font-family: 'Nunito', sans-serif;
+              white-space: nowrap;
 
               &:hover {
-                color: $color-light-purple-2;
-                transition: all 0.3s ease;
+                color: #f4bc33;
+                font-weight: 900;
               }
             }
           }
         }
       }
+
       .botao-contato {
-        background-color: $color-purple-3;
-        padding: 10px 20px;
-        font-family: var(--font-poppins);
+        padding: clamp(6px, 1vw, 10px) clamp(12px, 2vw, 20px);
         color: white;
+        background-color: #f4bc33;
         border-radius: 10px;
         transition: all 0.3s ease;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1px;
+        font-size: clamp(0.85rem, 1vw, 1rem);
+        white-space: nowrap;
 
         @media (max-width: 470px) {
           display: none;
         }
 
         &:hover {
-          background-color: $color-light-purple-2;
-          transition: all 0.3s ease;
+          border-radius: 1px;
         }
       }
     }
   }
+
+  /* ==============================
+     MENU MOBILE
+  ============================== */
   .menu-mobile {
     display: flex;
     justify-content: center;
@@ -172,29 +260,15 @@ header {
       align-items: center;
       flex-direction: column;
 
-      li {
-        a {
-          font-size: 23px;
-          font-family: var(--font-poppins);
-          font-weight: 600;
-        }
+      li a {
+        font-size: 23px;
+        font-family: var(--font-poppins);
+        font-weight: 600;
       }
     }
 
     &.open {
       top: 0;
-    }
-
-    &.open .topo-menu {
-      display: flex;
-      height: 100vh;
-      width: 100%;
-      justify-content: flex-start;
-      align-items: flex-start;
-      padding: 10px 20px;
-      z-index: 2;
-      background-color: #2525253f;
-      box-shadow: 0 5px 20px 2px #00000041;
     }
   }
 }

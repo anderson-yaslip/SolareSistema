@@ -1,0 +1,140 @@
+.sessao-sobre {
+  padding: 6rem 2rem;
+  transition: .3s ease-in-out;
+
+  @media screen and (min-width: 320px) and (max-width: 1000px) {
+    padding: 2rem;
+  }
+}
+
+.container-sobre {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+
+.coluna-imagem {
+  flex: 1;
+  width: 100%;
+
+  .imagem-sobre {
+    width: 100%;
+    height: 600px;
+    border-radius: 14px;
+    object-fit: cover;
+  }
+}
+
+.coluna-texto {
+  flex: 1.2;
+}
+
+.etiqueta-sobre {
+  letter-spacing: 3px;
+  font-size: 0.85rem;
+  color: #000;
+  display: block;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.titulo-sobre {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  font-family: 'Nunito', sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 2.2rem;
+  }
+}
+
+.descricao-sobre {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+  max-width: 90%;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  font-weight: 300;
+}
+
+.botao-sobre {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.6rem;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  background-color: rgb(17, 36, 55);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  background-color: #92bda8;
+
+  &:hover {
+    background-color: rgb(255, 139, 44);
+  }
+}
+
+.metricas {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2rem;
+  }
+}
+
+.bloco-metrica {
+  h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #0e1824;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  span {
+    font-size: 0.9rem;
+    color: #606b78;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Animação Fade-In */
+.fade-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+
+.fade-ativo .fade-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delay suave para cada elemento */
+.coluna-imagem.fade-item {
+  transition-delay: 0.1s;
+}
+
+.coluna-texto.fade-item {
+  transition-delay: 0.2s;
+}
+
+.metricas.fade-item {
+  transition-delay: 0.3s;
+}

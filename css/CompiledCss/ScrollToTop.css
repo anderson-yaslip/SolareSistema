@@ -1,5 +1,3 @@
-@use "../../styles/colors.scss" as *;
-
 /* ---------------------- Botao Voltar Ao Topo ------------------ */
 .voltar-para-o-topo {
   display: flex;
@@ -15,23 +13,21 @@
   border: 2px solid #fff;
   background-color: #f4bc33;
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px 4px rgb(0, 0, 0, .4);
-
-  svg {
-    color: #fff;
-    transition: all 0.3s ease;
-  }
-
-  &:hover {
-    transform: scale(1.2);
-    transition: all 0.3s ease-in-out;
-
-    svg {
-      color: white;
-    }
-  }
-
-  @media (min-width: 320px) {
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.4);
+}
+.voltar-para-o-topo svg {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.voltar-para-o-topo:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+.voltar-para-o-topo:hover svg {
+  color: white;
+}
+@media (max-width: 768px) {
+  .voltar-para-o-topo {
     display: none !important;
   }
 }

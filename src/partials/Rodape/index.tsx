@@ -58,6 +58,7 @@ export default function Rodape() {
             </li>
           </ul>
         </div>
+
         <div className="footerSelos">
           <div className="logoYaslip">
             <object
@@ -133,6 +134,7 @@ export default function Rodape() {
             </li>
           </ul>
         </div>
+        
       </div>
       <div className="bottomRowFooter">
         <p>

@@ -8,13 +8,16 @@
   height: auto;
   position: fixed;
   width: 100%;
-  background-color: rgba(223, 223, 223, 0.588);
+  background-color: #fff;
   backdrop-filter: blur(15px);
   box-shadow: 0 5px 20px 2px #303b41b8;
-  // box-shadow: 0px 10px 10px 6px #1a1a1a;
   bottom: 0;
   padding: 5px 0;
   z-index: 5;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 
   .icones-rodape {
     display: flex;
@@ -33,6 +36,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @media (max-width: 375px) {
+        margin: 0;
+      }
     }
 
     .phone {
@@ -48,10 +55,10 @@
     }
 
     .voltar-para-o-topo-mobile {
-      background-color: #f5f5f5;
+      background-color: #f38734;
 
       svg {
-        color: #000;
+        color: #fff;
       }
     }
   }

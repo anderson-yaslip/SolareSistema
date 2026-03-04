@@ -3,7 +3,7 @@ import { settings } from "@/settings/settings";
 import "normalize.css";
 import "@/styles/globals.scss";
 
-import { frankRuhl, josefinSans, poppins, openSans } from "@/lib/fonts";
+import { frankRuhl, josefinSans, poppins, openSans, montSerrat, nunito } from "@/lib/fonts";
 
 import type { Metadata } from "next";
 
@@ -11,6 +11,7 @@ import Topo from "@/partials/Topo";
 import Rodape from "@/partials/Rodape";
 import RodapeMobile from "@/partials/RodapeMobile";
 import Form from "@/components/Home/Form";
+import ScrollToTop from "@/components/ui/ScrollToTop";
 
 const { title, description, keywords, canonical, openGraph, robots } = settings;
 
@@ -52,7 +53,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>{/* GTM HEAD */}</head>
       <body
-        className={`${frankRuhl.variable} ${poppins.variable} ${josefinSans.variable} ${openSans.variable}`}
+        className={`${frankRuhl.variable} ${poppins.variable} ${josefinSans.variable} ${openSans.variable} ${montSerrat.variable} ${nunito.variable}`}
       >
         {/* GTM BODY */}
         <Topo />
@@ -60,6 +61,7 @@ export default function RootLayout({
         <Form />
         <Rodape />
         <RodapeMobile />
+        <ScrollToTop />
       </body>
     </html>
   );

@@ -9,11 +9,11 @@ import { usePathname } from "next/navigation";
 
 import { BsTelephoneForward } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
+import { MdMail } from "react-icons/md";
 
 import { useEffect, useState } from "react";
 import { josefinSans } from "@/lib/fonts";
 import HamburgerMenu from "@/components/HamburgerMenu";
-import { MdMail } from "react-icons/md";
 
 const { numeroTelefone, numeroWhatsapp, ddd, whatsappApi, email } = settings;
 
@@ -23,8 +23,7 @@ export default function Topo() {
   const pathname = usePathname();
 
   const handleScroll = () => {
-    const scroll = window.scrollY;
-    setIsFixed(scroll > 100); // 100 é a altura do topo
+    setIsFixed(window.scrollY > 100);
   };
 
   useEffect(() => {
@@ -34,7 +33,7 @@ export default function Topo() {
 
   useEffect(() => {
     setIsMenuOpen(false);
-  }, [pathname]); // funciona no App Router
+  }, [pathname]);
 
   const toggleMobile = () => {
     setIsMenuOpen((prev) => !prev);
@@ -43,63 +42,69 @@ export default function Topo() {
   return (
     <header>
       <div className={isFixed ? "topo fixed" : "topo"}>
+
         <div className="topo-contato">
           <div className={`base ${josefinSans.className}`}>
             <Link href={`tel:0${ddd}${numeroTelefone}`} target="_blank">
               <BsTelephoneForward /> {`(${ddd}) ${numeroTelefone}`}
             </Link>
-            {numeroWhatsapp ? (
+
+            {numeroWhatsapp && (
               <Link href={whatsappApi} target="_blank">
                 <FaWhatsapp /> {`(${ddd}) ${numeroWhatsapp}`}
               </Link>
-            ) : (
-              ""
             )}
+
             <Link href={`mailto:${email}`} target="_blank">
               <MdMail /> {`${email}`}
             </Link>
           </div>
         </div>
+
+        {/* MENU + LOGO */}
         <div className="topo-menu">
           <div className="base">
-            <Link href="/">
-              <Image alt="Imagem" src="/logo.webp" width={200} height={60} />
+
+            {/* LOGO escondido no início */}
+            <Link href="/" className="logo-wrapper">
+              <Image
+                src="/logo.webp"
+                width={150}
+                height={60}
+                alt="Logo do site"
+                className="logo"
+              />
             </Link>
+
+            {/* LINKS */}
             <ul className="topo-links">
-              <li className="topo-item">
-                <Link href="/">Home</Link>
-              </li>
-              <li className="topo-item">
-                <Link href="/sobre-nos">Sobre nós</Link>
-              </li>
-              <li className="topo-item">
-                <Link href="/pagina-exemplo">Exemplo</Link>
-              </li>
-              <li className="topo-item">
-                <Link href="/informacoes">+</Link>
-              </li>
+              <li className="topo-item"><Link href="/">Home</Link></li>
+              <li className="topo-item"><Link href="/quem-somos">Quem Somos</Link></li>
+              <li className="topo-item"><Link href="/baneficios">Benefícios</Link></li>
+              <li className="topo-item"><Link href="/onde-instalar">Onde instalar</Link></li>
+              <li className="topo-item"><Link href="/projetos">Projetos</Link></li>
+              <li className="topo-item"><Link href="/informacoes">.</Link></li>
+              {/* <li className="topo-item"><Link href="/servicos">Serviços</Link></li> */}
             </ul>
+
             <Link href="/contato" className="botao-contato">
               Entre em contato
             </Link>
+
             <HamburgerMenu isOpen={isMenuOpen} toggleMenu={toggleMobile} />
           </div>
         </div>
       </div>
+
+      {/* MENU MOBILE */}
       <div className={`menu-mobile ${isMenuOpen ? "open" : ""}`}>
         <ul className="topo-links-mobile">
-          <li className="topo-item">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="topo-item">
-            <Link href="/sobre-nos">Sobre nós</Link>
-          </li>
-          <li className="topo-item">
-            <Link href="/pagina-exemplo">Exemplo</Link>
-          </li>
-          <li className="topo-item">
-            <Link href="/informacoes">+</Link>
-          </li>
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/quem-somos">Quem Somos</Link></li>
+          <li><Link href="/beneficios">Benefícios</Link></li>
+          <li><Link href="/onde-instalar">Onde instalar</Link></li>
+          <li><Link href="/projetos">Projetos</Link></li>
+          <li><Link href="/informacoes">.</Link></li>
         </ul>
       </div>
     </header>
