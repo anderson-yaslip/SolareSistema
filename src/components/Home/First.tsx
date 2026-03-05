@@ -7,7 +7,7 @@ export default function First() {
 
   return (
     <>
-      <section className="primeira-sessao">
+      <section className="primeira-sessao" id="baneficios">
         <div className="conteudo-principal">
 
           <div className="containerSelo">

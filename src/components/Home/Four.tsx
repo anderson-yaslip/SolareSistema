@@ -7,7 +7,7 @@ function Four() {
 
     return (
         <>
-            <section className="containerFour">
+            <section className="containerFour" id="onde-instalar">
                 <div className="linha-textos">
 
                     <div className="coluna-esquerda">

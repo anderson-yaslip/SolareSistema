@@ -1,0 +1,92 @@
+.containerServices {
+    width: 100%;
+    height: auto;
+    margin: 10rem auto;
+    transition: .3s ease-in-out;
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 4px;
+        width: 80%;
+        height: auto;
+        margin: 2rem auto;
+        transition: .3s ease-in-out;
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .div1 {
+            grid-area: 1 / 1 / 3 / 3;
+            background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("/solarTeste.jpg");
+        }
+
+        .div2 {
+            grid-area: 3 / 1 / 6 / 3;
+            background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("/solarTeste.jpg");
+        }
+
+        .div3 {
+            grid-area: 1 / 3 / 2 / 5;
+            background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("/solarTeste.jpg");
+        }
+
+        .div4 {
+            grid-area: 2 / 3 / 4 / 5;
+            background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("/solarTeste.jpg");
+        }
+
+        .div5 {
+            grid-area: 4 / 3 / 6 / 5;
+            background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("/solarTeste.jpg");
+        }
+
+        .div6 {
+            grid-area: 1 / 5 / 4 / 7;
+            background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("/solarTeste.jpg");
+        }
+
+        .div7 {
+            grid-area: 4 / 5 / 6 / 7;
+            background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("/solarTeste.jpg");
+        }
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Nunito', sans-serif;
+        letter-spacing: 1px;
+        color: #8eb8a5;
+        transition: .3s ease-in-out;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+
+    .div1,
+    .div2,
+    .div3,
+    .div4,
+    .div5,
+    .div6,
+    .div7 {
+        padding: 3rem;
+        background-position: center;
+        background-size: cover;
+        border-radius: .7rem;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, .2);
+        transition: .3s ease-in-out;
+
+        @media (max-width: 768px) {
+            flex: 1 1 100%;
+            grid-area: unset;
+        }
+    }
+}

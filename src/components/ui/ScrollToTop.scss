@@ -39,7 +39,7 @@ $transition-speed: 0.5s;
   transition: all $transition-speed ease;
 
   @media (max-width: 768px) {
-    // display: none;
+    display: none;
   }
 
   // Hover & Active

@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
       <Banner />
-      <First />
       <Sobre />
+      <First />
       <Three />
       <Four />
       <Five />

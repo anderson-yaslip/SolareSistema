@@ -61,11 +61,9 @@ export default function Topo() {
           </div>
         </div>
 
-        {/* MENU + LOGO */}
         <div className="topo-menu">
           <div className="base">
 
-            {/* LOGO escondido no início */}
             <Link href="/" className="logo-wrapper">
               <Image
                 src="/logo.webp"
@@ -79,9 +77,9 @@ export default function Topo() {
             {/* LINKS */}
             <ul className="topo-links">
               <li className="topo-item"><Link href="/">Home</Link></li>
-              <li className="topo-item"><Link href="/quem-somos">Quem Somos</Link></li>
-              <li className="topo-item"><Link href="/baneficios">Benefícios</Link></li>
-              <li className="topo-item"><Link href="/onde-instalar">Onde instalar</Link></li>
+              <li className="topo-item"><Link href="/#quem-somos">Quem Somos</Link></li>
+              <li className="topo-item"><Link href="/#baneficios">Benefícios</Link></li>
+              <li className="topo-item"><Link href="/#onde-instalar">Onde instalar</Link></li>
               <li className="topo-item"><Link href="/projetos">Projetos</Link></li>
               <li className="topo-item"><Link href="/informacoes">.</Link></li>
               {/* <li className="topo-item"><Link href="/servicos">Serviços</Link></li> */}

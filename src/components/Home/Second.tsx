@@ -59,7 +59,7 @@ export default function Sobre() {
     }, [started]);
 
     return (
-        <section className="sessao-sobre" ref={sectionRef}>
+        <section className="sessao-sobre" id="quem-somos" ref={sectionRef}>
             <div className="container-sobre">
 
                 <div className="coluna-imagem">
