@@ -39,11 +39,11 @@ export default function Banner() {
                 escolheram nossos painéis
               </p>
               <p>Energia que gera valor</p>
-                <img src="/imagensIndex/image2.webp" alt="" />
+                <Image src="/imagensIndex/image2.webp" alt="" width={500} quality={100} height={200} />
             </div>
 
             <div className="cardTwo">
-              <img src="/imagensIndex/image1.webp" alt="" />
+              <Image src="/imagensIndex/image1.webp" alt="" width={500} quality={100} height={200} />
             </div>
           </div>
 
