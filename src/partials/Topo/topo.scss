@@ -46,7 +46,7 @@ header {
 
       .topo-menu {
         padding: 1rem;
-        width: 80%;
+        width: 90%;
 
         @media (max-width: 768px) {
           width: 100%;
@@ -90,7 +90,7 @@ header {
         width: 84%;
       }
 
-      
+
       @media screen and (min-width: 1101px) and (max-width: 1560px) {
         width: 64%;
       }
@@ -185,8 +185,8 @@ header {
           list-style: none;
           align-items: center;
           justify-content: center;
-          gap: clamp(1rem, 3vw, 4rem);
           flex-wrap: nowrap;
+          gap: 1rem;
 
           @media (max-width: 768px) {
             display: none;

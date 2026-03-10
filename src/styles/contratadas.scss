@@ -4,8 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   .base {
     width: 100%;
+
     .cards {
       display: flex;
       flex-wrap: wrap;
@@ -29,6 +31,7 @@
             object-fit: cover;
             object-position: top;
             width: 100%;
+            border-radius: 1rem;
           }
 
           p {
@@ -47,6 +50,7 @@
             text-align: center;
             line-height: 17px;
             transition: all 0.3s ease;
+            border-radius: 1rem;
           }
 
           &:hover {
@@ -77,6 +81,7 @@
     flex-direction: column;
     gap: 10px;
     width: 100%;
+
     .link-default {
       font-size: 1.5rem;
       width: fit-content;
@@ -107,6 +112,7 @@
         transition: 0.3s;
         padding-left: 25px;
         width: fit-content;
+
         &::before {
           counter-increment: numeros;
           content: counter(numeros);
@@ -179,6 +185,8 @@
         .img-responsive {
           max-width: 400px;
           height: 300px;
+          border-radius: 1rem;
+          box-shadow: 0 0 10px 4px rgba(0, 0, 0, .2);
 
           @media (max-width: 1177px) {
             width: 50%;
@@ -198,10 +206,10 @@
       }
 
       h2 {
-        font-family: var(--font-josefin);
+        font-family: 'Nunito', sans-serif;
         font-size: 25px;
         padding: 5px 0px;
-        color: $color-purple-2;
+        color: #000;
       }
 
       .text {
@@ -217,10 +225,11 @@
           font-size: 18px;
           line-height: 30px;
           margin-bottom: 20px;
+          font-family: 'Montserrat', sans-seri
         }
 
         .sumario {
-          background-color: rgb(207, 207, 207);
+          box-shadow: 0 0 10px 4px rgba(0, 0, 0, .2);
           padding: 20px;
           border-radius: 10px;
 
@@ -234,13 +243,15 @@
 
             a {
               color: #222222;
+              font-family: 'Nunito', sans-serif;
             }
-
+            
             ol {
               font-weight: 500;
               margin-left: 20px;
-
+              
               li {
+                font-family: 'Montserrat', sans-serif;
                 margin-top: 10px;
               }
             }
@@ -251,7 +262,7 @@
           scroll-margin-top: 120px;
           font-size: 30px;
           font-weight: 600;
-          color: $color-purple-3;
+          color: #000;
 
           @media (max-width: 650px) {
             font-size: 25px;
@@ -280,7 +291,9 @@
         }
 
         a {
-          color: $color-purple-2;
+          color: blue;
+          font-weight: 500;
+          letter-spacing: 1px;
         }
       }
     }
@@ -288,7 +301,6 @@
 }
 
 /* "Includes" */
-
 .base-includes {
   max-width: 1600px;
   width: 100%;
@@ -318,15 +330,15 @@
   }
 
   a {
-    background-color: $color-purple-3;
+    background-color: #92bda8;
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: $color-purple-2;
       transition: all 0.3s ease;
+      transform: scale(1.1);
     }
   }
 }
@@ -353,7 +365,7 @@
     font-weight: bold;
     padding: 15px 0;
     margin: 0 0 5px 0;
-    background-color: $color-purple-2;
+    background-color: #92bda8;
     text-align: center;
     border-radius: 10px 10px 0 0;
     color: white;
@@ -467,7 +479,7 @@
 
   a {
     font-weight: 700;
-    color: $color-purple-2;
+    color: blue;
   }
 }
 
@@ -485,6 +497,7 @@
     color: #424242;
     padding: 20px 0px;
   }
+
   .slick-slider {
     display: flex;
     flex-direction: column;

@@ -45,9 +45,9 @@ export default function Topo() {
 
         <div className="topo-contato">
           <div className={`base ${josefinSans.className}`}>
-            <Link href={`tel:0${ddd}${numeroTelefone}`} target="_blank">
+            {/* <Link href={`tel:0${ddd}${numeroTelefone}`} target="_blank">
               <BsTelephoneForward /> {`(${ddd}) ${numeroTelefone}`}
-            </Link>
+            </Link> */}
 
             {numeroWhatsapp && (
               <Link href={whatsappApi} target="_blank">

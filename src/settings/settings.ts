@@ -1,10 +1,10 @@
 import { SiteSettings } from "@/types";
 
-const siteName = "Site Base";
+const siteName = "Solare";
 const title = `Início | ${siteName}`;
 const description = "Exemplo";
 const keywords = "Exemplo";
-export const url = "https://www.nomesite.com.br/";
+export const url = "https://solaresistemas.com.br/";
 
 // True = Ativo || False = Inativo - Para ativar ou desativar os "includes" das páginas contratadas
 export const includes = {
@@ -24,11 +24,12 @@ export const settings: SiteSettings = {
   ddd: "11",
   selosDark: true, // Selos Rodapé - True = Preto ||  False = Branco
   numeroTelefone: "90000-0000",
-  whatsappApi: "https://api.whatsapp.com/send?phone=5511900000000",
-  numeroWhatsapp: "90000-0000",
+  whatsappApi: "https://api.whatsapp.com/send?phone=5511983542966",
+  numeroWhatsapp: "98354-2966",
   // email: "wesley@yaslip.com.br",
   // emailDestinatario: "wesley@yaslip.com.br",
-  email: "andersonmelo.yaslip@gmail.com",
+  // email: "andersonmelo.yaslip@gmail.com",
+  email: "solare@gmail.com",
   emailDestinatario: "andersonmelo.yaslip@gmail.com",
   endereco: {
     urlMaps: "https://maps.app.goo.gl/caH1G5Rs1tBdgBRw9",

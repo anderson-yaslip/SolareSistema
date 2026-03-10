@@ -27,7 +27,13 @@ export default function Banner() {
           <h2>Energia Solar para um Futuro Mais Inteligente</h2>
           <div className="containerText">
             <p>Transforme a luz do sol em economia real e sustentável. A Solare Sistemas oferece soluções completas em energia fotovoltaica para residências, empresas e indústrias, entregando segurança, eficiência e redução imediata na sua conta de luz.</p>
-            <button>Ver mais</button>
+            {/* <button>Ver mais</button> */}
+            <Link
+              href={'/informacoes'}
+              className="linkVerMais"
+            >
+              Ver mais
+            </Link>
           </div>
 
           <div className="containerCards">
@@ -39,7 +45,7 @@ export default function Banner() {
                 escolheram nossos painéis
               </p>
               <p>Energia que gera valor</p>
-                <Image src="/imagensIndex/image2.webp" alt="" width={500} quality={100} height={200} />
+              <Image src="/imagensIndex/image2.webp" alt="" width={500} quality={100} height={200} />
             </div>
 
             <div className="cardTwo">
@@ -69,7 +75,7 @@ export default function Banner() {
                     Projetos personalizados para residências e empresas, com instalação
                     segura, rápida e garantia de desempenho.
                   </p>
-                  <Link href="/sobre">Saiba mais</Link>
+                  <Link href="/contato">Saiba mais</Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -83,7 +89,7 @@ export default function Banner() {
                     você garante previsibilidade, autonomia energética e mais segurança
                     financeira para o seu imóvel ou negócio.
                   </p>
-                  <Link href="/sobre">Saiba mais</Link>
+                  <Link href="/contato">Saiba mais</Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -97,7 +103,7 @@ export default function Banner() {
                     futuro mais sustentável com soluções solares modernas, eficientes e
                     de alta performance.
                   </p>
-                  <Link href="/sobre">Saiba mais</Link>
+                  <Link href="/contato">Saiba mais</Link>
                 </div>
               </div>
             </SwiperSlide>

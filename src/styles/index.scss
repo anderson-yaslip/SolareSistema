@@ -361,7 +361,8 @@
         }
       }
 
-      button {
+      button,
+      .linkVerMais {
         width: 20%;
         padding: 1rem;
         margin-left: 2rem;
@@ -378,6 +379,7 @@
         font-family: 'Montserrat', sans-serif;
         border: 1px solid #fff;
         box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
+        text-align: center;
 
         &:hover {
           transform: scale(1.1);

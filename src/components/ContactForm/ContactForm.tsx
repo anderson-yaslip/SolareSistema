@@ -11,6 +11,7 @@ const RECAPTCHA_SITE_KEY = "6LdzZvAqAAAAACIdoEUtHKHYYNNwIyDVODykjcpn"; // Substi
 export default function ContactForm({ variation }: { variation: string }) {
   const [formData, setFormData] = useState<FormData>({
     nome: "",
+    
     email: "",
     empresa: "",
     telefone: "",
