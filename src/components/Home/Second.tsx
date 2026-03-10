@@ -6,7 +6,7 @@ import "../../styles/sobre.scss";
 
 export default function Sobre() {
 
-    const [count20, setCount20] = useState(0);
+    const [count5, setCount5] = useState(0);
     const [count134, setCount134] = useState(0);
     const [count60, setCount60] = useState(0);
     const [count56, setCount56] = useState(0);
@@ -42,7 +42,7 @@ export default function Sobre() {
                     setStarted(true);
 
                     // Milessegundos, por exemplo: 3000ms para 20, 3500ms para 134, etc.
-                    animateValue(setCount20, 20, 3000);
+                    animateValue(setCount5, 5, 3000);
                     animateValue(setCount134, 134, 3500);
                     animateValue(setCount60, 60, 3200);
                     animateValue(setCount56, 5600, 3800);
@@ -94,7 +94,7 @@ export default function Sobre() {
                     <div className="metricas">
 
                         <div className="bloco-metrica">
-                            <h3>{count20}+</h3>
+                            <h3>{count5}+</h3>
                             <span>Anos de Experiência</span>
                         </div>
 
