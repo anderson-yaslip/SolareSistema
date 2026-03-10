@@ -178,6 +178,11 @@ header {
         a img {
           width: clamp(140px, 12vw, 200px);
           height: auto;
+          transition: .3s ease-in-out;
+
+          @media screen and (min-width: 768px) and (max-width:840px) {
+            width: clamp(108px, 12vw, 200px);
+          }
         }
 
         .topo-links {
@@ -190,6 +195,12 @@ header {
 
           @media (max-width: 768px) {
             display: none;
+          }
+
+          transition: .3s ease-in-out;
+
+          @media screen and (min-width: 768px) and (max-width: 900px) {
+            gap: 0;
           }
 
           .topo-item {
