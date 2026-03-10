@@ -11,13 +11,13 @@ const title = "Projetos";
 export default function ProjetosClient() {
 
   const projetosArray = [
-    { id: 1, title: "Projeto 1", image: "/solarTeste.jpg" },
-    { id: 2, title: "Projeto 2", image: "/solarTeste.jpg" },
-    { id: 3, title: "Projeto 3", image: "/solarTeste.jpg" },
-    { id: 4, title: "Projeto 4", image: "/solarTeste.jpg" },
-    { id: 5, title: "Projeto 5", image: "/solarTeste.jpg" },
-    { id: 6, title: "Projeto 6", image: "/solarTeste.jpg" },
-    { id: 7, title: "Projeto 7", image: "/solarTeste.jpg" },
+    { id: 1, title: "Projeto 1", image: "/imagensProjetos/PainelSolar1.webp" },
+    { id: 2, title: "Projeto 2", image: "/imagensProjetos/PainelSolar2.webp" },
+    { id: 3, title: "Projeto 3", image: "/imagensProjetos/PainelSolar3.webp" },
+    { id: 4, title: "Projeto 4", image: "/imagensProjetos/PainelSolar4.webp" },
+    { id: 5, title: "Projeto 5", image: "/imagensProjetos/PainelSolar5.webp" },
+    { id: 6, title: "Projeto 6", image: "/imagensProjetos/PainelSolar6.webp" },
+    { id: 7, title: "Projeto 7", image: "/imagensProjetos/PainelSolar7.webp" },
   ];
 
   const galeriaArray = [
