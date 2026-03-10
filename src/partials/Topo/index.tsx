@@ -98,9 +98,9 @@ export default function Topo() {
       <div className={`menu-mobile ${isMenuOpen ? "open" : ""}`}>
         <ul className="topo-links-mobile">
           <li><Link href="/">Home</Link></li>
-          <li><Link href="/quem-somos">Quem Somos</Link></li>
-          <li><Link href="/beneficios">Benefícios</Link></li>
-          <li><Link href="/onde-instalar">Onde instalar</Link></li>
+          <li><Link href="/#quem-somos">Quem Somos</Link></li>
+          <li><Link href="/#baneficios">Benefícios</Link></li>
+          <li><Link href="/#onde-instalar">Onde instalar</Link></li>
           <li><Link href="/projetos">Projetos</Link></li>
           <li><Link href="/informacoes">.</Link></li>
         </ul>
