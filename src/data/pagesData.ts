@@ -8,109 +8,120 @@ export const pagesData = [
     imageCount: 1,
     content: `
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor, lectus nec faucibus 
-				imperdiet, libero nulla posuere odio, ut egestas leo mi nec risus. Sed dignissim lacus 
-				non justo gravida, et <a href="#">viverra magna</a> cursus. Proin id mauris in tortor 
-				dictum posuere. Donec vitae lectus id sem suscipit viverra.
-			</p>
-			<div class="sumario">
-				<h2>Sumário</h2>
-				<ol>
-					<li>
-						<a href="#lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit">
-							Lorem ipsum dolor sit amet consectetur adipiscing elit
-						</a>
-						<ol>
-							<li><a href="#vantagens-lorem-ipsum-dolor">Vantagens lorem ipsum dolor</a></li>
-							<li><a href="#consectetur-adipiscing-elit">Consectetur adipiscing elit</a></li>
-							<li><a href="#suspendisse-potenti-integer">Suspendisse potenti integer</a></li>
-						</ol>
-					</li>
-					<li>
-						<a href="#praesent-vel-urna-sed-lorem-maximus-ultricies">
-							Praesent vel urna sed lorem maximus ultricies
-						</a>
-						<ol>
-							<li><a href="#mauris-varius-sapien">Mauris varius sapien</a></li>
-							<li><a href="#curabitur-et-felis">Curabitur et felis</a></li>
-							<li><a href="#vestibulum-at-velit">Vestibulum at velit</a></li>
-						</ol>
-					</li>
-					<li><a href="#entre-em-contato">ENTRE EM CONTATO</a></li>
-				</ol>
-			</div>
+	A energia solar é uma das formas mais eficientes e sustentáveis de gerar eletricidade
+	para residências, empresas e indústrias. Com a tecnologia fotovoltaica, é possível
+	transformar a luz do sol em energia elétrica limpa, reduzindo significativamente
+	a conta de luz. A <a href="#">Solare Sistemas</a> oferece projetos personalizados
+	que garantem economia, segurança e alto desempenho desde o primeiro dia de instalação.
+</p>
 
-			<h2 id="lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit">
-				Lorem ipsum dolor sit amet consectetur adipiscing elit
-			</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec <a href="#">facilisis 
-				vehicula</a> magna nec condimentum. Sed id turpis eget sem ullamcorper imperdiet. 
-				Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-				Integer viverra purus vitae leo convallis aliquet.
-			</p>
+<div class="sumario">
+	<h2>Sumário</h2>
+	<ol>
+		<li>
+			<a href="#energia-solar-como-funciona-e-beneficios">
+				Energia solar: como funciona e quais os benefícios
+			</a>
+			<ol>
+				<li><a href="#economia-na-conta-de-luz">Economia na conta de luz</a></li>
+				<li><a href="#energia-limpa-e-sustentavel">Energia limpa e sustentável</a></li>
+				<li><a href="#independencia-energetica">Independência energética</a></li>
+			</ol>
+		</li>
+		<li>
+			<a href="#aplicacoes-da-energia-solar">
+				Aplicações da energia solar
+			</a>
+			<ol>
+				<li><a href="#energia-solar-residencial">Energia solar residencial</a></li>
+				<li><a href="#energia-solar-empresarial">Energia solar para empresas</a></li>
+				<li><a href="#energia-solar-area-rural">Energia solar na área rural</a></li>
+			</ol>
+		</li>
+		<li><a href="#entre-em-contato">ENTRE EM CONTATO</a></li>
+	</ol>
+</div>
 
-			<h3 id="vantagens-lorem-ipsum-dolor">Vantagens lorem ipsum dolor</h3>
-			<p>
-				<a href="#">Lorem ipsum dolor</a> sit amet, consectetur adipiscing elit. Cras vel arcu 
-				quis felis aliquet faucibus. Mauris vehicula nulla sed mauris euismod, in pulvinar ligula 
-				sollicitudin. Integer eget orci vitae tortor viverra condimentum ut id sapien.
-			</p>
+<h2 id="energia-solar-como-funciona-e-beneficios">
+	Energia solar: como funciona e quais os benefícios
+</h2>
+<p>
+	A energia solar fotovoltaica funciona através de painéis solares que captam
+	a luz do sol e a transformam em eletricidade. Esse sistema é conectado à rede
+	elétrica do imóvel e permite gerar energia própria de forma eficiente.
+	Com um <a href="#">sistema fotovoltaico</a>, você reduz custos e ainda contribui
+	para um futuro mais sustentável.
+</p>
 
-			<h3 id="consectetur-adipiscing-elit">Consectetur adipiscing elit</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod nisl at ipsum 
-				feugiat, id porttitor sapien consequat. Curabitur sit amet erat a ante faucibus tincidunt. 
-				Donec laoreet, nulla vitae imperdiet laoreet, lacus erat euismod odio, vitae suscipit nisi 
-				metus ac est.
-			</p>
+<h3 id="economia-na-conta-de-luz">Economia na conta de luz</h3>
+<p>
+	Um dos principais benefícios da energia solar é a redução na conta de energia.
+	Dependendo do projeto e do consumo do imóvel, é possível economizar até
+	<strong>95% na conta de luz</strong>. Além disso, a energia gerada pode
+	compensar o consumo da rede elétrica, trazendo economia já no primeiro mês
+	após a instalação do sistema.
+</p>
 
-			<h3 id="suspendisse-potenti-integer">Suspendisse potenti integer</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique odio nec 
-				risus accumsan, vitae tempus velit rhoncus. Nunc dignissim, nulla vel malesuada fermentum, 
-				justo turpis consequat nibh, a feugiat magna leo ut ipsum. Fusce vitae lorem ut magna 
-				vestibulum luctus.
-			</p>
+<h3 id="energia-limpa-e-sustentavel">Energia limpa e sustentável</h3>
+<p>
+	A energia solar é uma fonte renovável e não poluente. Diferente de outras
+	formas de geração de energia, ela não emite gases poluentes e contribui
+	para a preservação do meio ambiente. Ao investir em energia solar,
+	você reduz sua pegada ambiental e participa ativamente da transição
+	para um modelo energético mais sustentável.
+</p>
 
-			<h2 id="praesent-vel-urna-sed-lorem-maximus-ultricies">
-				Praesent vel urna sed lorem maximus ultricies
-			</h2>
-			<p>
-				Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Vivamus vel urna 
-				at elit condimentum finibus. Pellentesque vel justo non odio suscipit tincidunt. Donec 
-				quis lorem in erat pulvinar efficitur vitae in mi. Ut at arcu id libero volutpat suscipit.
-			</p>
+<h3 id="independencia-energetica">Independência energética</h3>
+<p>
+	Com um sistema fotovoltaico instalado, você passa a produzir parte
+	ou até mesmo toda a energia que consome. Isso significa mais autonomia
+	e proteção contra aumentos constantes nas tarifas de energia elétrica.
+	Além disso, imóveis com energia solar tendem a ter maior valorização
+	no mercado imobiliário.
+</p>
 
-			<h3 id="mauris-varius-sapien">Mauris varius sapien</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut turpis quis urna 
-				dignissim fermentum. Sed lacinia orci id bibendum aliquet. Pellentesque et nisl nec nunc 
-				finibus tempus. Nulla facilisi. Curabitur tristique diam sed nulla tincidunt ultricies.
-			</p>
+<h2 id="aplicacoes-da-energia-solar">
+	Aplicações da energia solar
+</h2>
+<p>
+	A energia solar pode ser aplicada em diferentes setores e tipos de
+	imóveis. Seja em residências, empresas ou propriedades rurais,
+	os sistemas fotovoltaicos trazem economia, eficiência energética
+	e sustentabilidade para diversas atividades do dia a dia.
+</p>
 
-			<h3 id="curabitur-et-felis">Curabitur et felis</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Duis varius 
-				sapien ac nunc <strong>vulputate convallis</strong>. Proin fringilla eros sed metus rutrum, 
-				vel efficitur sapien sagittis. Integer volutpat ex non est pretium fermentum.
-			</p>
+<h3 id="energia-solar-residencial">Energia solar residencial</h3>
+<p>
+	Residências podem reduzir drasticamente os gastos com eletricidade
+	ao instalar painéis solares. Além da economia mensal, o sistema
+	fotovoltaico aumenta o valor do imóvel e proporciona maior
+	segurança financeira para a família.
+</p>
 
-			<h3 id="vestibulum-at-velit">Vestibulum at velit</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in sapien nec felis 
-				feugiat commodo. Proin in risus nec augue finibus ullamcorper. Suspendisse quis 
-				pellentesque turpis. Sed sit amet mauris mi. Curabitur consequat metus ut justo congue 
-				iaculis.
-			</p>
+<h3 id="energia-solar-empresarial">Energia solar para empresas</h3>
+<p>
+	Empresas e comércios podem diminuir custos operacionais utilizando
+	energia solar. Isso melhora a previsibilidade de gastos com energia
+	e ainda fortalece a imagem da empresa como uma organização
+	comprometida com sustentabilidade e inovação.
+</p>
 
-			<h2 id="entre-em-contato">ENTRE EM CONTATO</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec dui neque. Integer non 
-				elit vitae justo congue tempus. Nunc a efficitur metus, at viverra nulla. 
-				<a href="#">Suspendisse potenti</a>. Mauris fringilla efficitur lorem, ac porta sapien 
-				porttitor non.
-			</p>
+<h3 id="energia-solar-area-rural">Energia solar na área rural</h3>
+<p>
+	Na área rural, a energia solar pode ser utilizada para diversas
+	finalidades, como bombeamento de água, irrigação e funcionamento
+	de equipamentos agrícolas. É uma solução eficiente para propriedades
+	que buscam autonomia energética e redução de custos no campo.
+</p>
+
+<h2 id="entre-em-contato">ENTRE EM CONTATO</h2>
+<p>
+	Quer saber quanto você pode economizar com energia solar?
+	Entre em contato com a equipe da <a href="#">Solare Sistemas</a>
+	e solicite um orçamento personalizado. Nossos especialistas
+	estão prontos para analisar seu consumo e desenvolver o
+	melhor projeto de energia solar para sua casa ou empresa.
+</p>
 		`,
   },
 ];
