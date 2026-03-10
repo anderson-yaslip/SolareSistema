@@ -23,7 +23,7 @@ export default function First() {
             <div className="cartao">
               <h3>Economia Garantida</h3>
               <p>Reduza sua conta de energia em até 95% e comece a economizar já no primeiro mês.</p>
-              <a href="" className="botaoSeta">
+              <a href="/informacoes" className="botaoSeta">
                 <MoveUpRight size={20} />
               </a>
             </div>
@@ -31,7 +31,7 @@ export default function First() {
             <div className="cartao">
               <h3>Proteção contra Reajustes</h3>
               <p>As tarifas de energia sobem todos os anos. Com energia solar, você se protege dos aumentos.</p>
-              <a href="" className="botaoSeta">
+              <a href="/pagina-exemplo" className="botaoSeta">
                 <MoveUpRight size={20} />
               </a>
             </div>
@@ -39,7 +39,7 @@ export default function First() {
             <div className="cartao cartao-destaque">
               <h3>Valorização e Oportunidade</h3>
               <p>Seu imóvel ganha valor no mercado e você ainda pode transformar energia solar em lucro.</p>
-              <a href="" className="botaoSeta">
+              <a href="/pagina-exemplo" className="botaoSeta">
                 <MoveUpRight size={20} />
               </a>
             </div>

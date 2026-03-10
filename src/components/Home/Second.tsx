@@ -89,7 +89,7 @@ export default function Sobre() {
                         Trabalhamos com tecnologia de ponta e projetos personalizados, garantindo instalações seguras, alto desempenho e resultados reais desde o primeiro dia.
                     </p>
 
-                    <a href="#" className="botao-sobre">Ver mais</a>
+                    <a href="/projetos" className="botao-sobre">Ver mais</a>
 
                     <div className="metricas">
 

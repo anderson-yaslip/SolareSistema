@@ -15,7 +15,7 @@ function Four() {
                             A energia solar é versátil e se adapta a diferentes tipos de necessidades, oferecendo economia, eficiência e autonomia energética para diversos segmentos. De residências a grandes estruturas comerciais, as aplicações são amplas e trazem benefícios reais desde o primeiro dia.
                         </p>
 
-                        <a href="#" className="botao-acao">Ver mais</a>
+                        <a href="/projetos" className="botao-acao">Ver mais</a>
                     </div>
 
                     <div className="coluna-direita">

@@ -10,7 +10,7 @@ const description =
 const keywords =
   "projetos de energia solar, instalação painel solar, projetos fotovoltaicos, energia solar residencial, Solare Sistemas";
 
-const canonical = "Projetos";
+const canonical = "projetos";
 
 export const metadata: Metadata = {
   title: `${title} | ${siteName}`,

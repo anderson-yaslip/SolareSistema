@@ -6,7 +6,10 @@
   flex-direction: column;
   width: fit-content;
   gap: 20px;
-  font-family: var(--font-open-sans);
+  border: 1px solid #f4bc33;
+  padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
 
   @media (max-width: 840px) {
     width: 100%;
@@ -73,16 +76,15 @@
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
-    background-color: $color-purple-2;
+    background-color: #66a587;
     color: white;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-family: 'Nunito', sans-serif;
 
     &:hover {
-      background-color: $color-purple-3;
       transition: all 0.3s ease;
-      color: $color-white-bg;
     }
   }
 }

@@ -68,7 +68,7 @@ export default function Three() {
                     <div className="containerLink">
                         <div>
                             <p>Conte com nossa equipe para tirar dúvidas e orientar você sobre nossos serviços, atendimento e prazos. Estamos aqui para garantir clareza e segurança em cada etapa.</p>
-                            <a href="">Ver mais</a>
+                            <a href="/contato">Ver mais</a>
                         </div>
                     </div>
 
