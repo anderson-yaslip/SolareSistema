@@ -29,9 +29,6 @@ $transition-speed: 0.5s;
   border-radius: 50%;
   border: none;
   cursor: pointer;
-
-  // Gradiente suave e elegante
-  // background: linear-gradient(135deg, $primary, $accent);
   background: linear-gradient(135deg, #92bda8, #fff687);
   border: 2px solid #FFFF;
   backdrop-filter: blur($blur);
@@ -42,23 +39,19 @@ $transition-speed: 0.5s;
     display: none;
   }
 
-  // Hover & Active
   &:hover {
     transform: scale(1.1);
-    // box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
   }
 
   &:active {
     transform: scale(0.95);
   }
 
-  // Estado visível
   &.visible {
     transform: translateY(0) scale(1);
     opacity: 1;
   }
 
-  // Estado oculto
   &.hidden {
     transform: translateY(80px) scale(0.5);
     opacity: 0;

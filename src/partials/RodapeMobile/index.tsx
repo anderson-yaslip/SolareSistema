@@ -9,6 +9,7 @@ import {
   FaChevronUp,
   FaPhoneAlt,
 } from "react-icons/fa";
+import ScrollToTopMobile from "@/components/ui/ScrollToTopMobile";
 
 const { siteName, ddd, whatsappApi, numeroTelefone, email } = settings;
 
@@ -43,15 +44,8 @@ export default async function RodapeMobile() {
             <FaWhatsapp />
             <div style={{ display: "none" }}>{siteName}</div>
           </a>
-
-          <a
-            href="#"
-            className="voltar-para-o-topo-mobile icone"
-            title="voltar ao topo"
-          >
-            <FaChevronUp />
-            <div style={{ display: "none" }}>{siteName}</div>
-          </a>
+        
+            <ScrollToTopMobile />
         </div>
       </div>
     )

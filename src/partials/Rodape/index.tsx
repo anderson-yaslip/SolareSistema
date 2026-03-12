@@ -155,7 +155,7 @@ export default function Rodape() {
           <span style={{ display: "none" }}>.</span>
         </a>
       </div>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
     </footer>
   );
 }

@@ -22,6 +22,7 @@
   .icones-rodape {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
     a {
       margin: 5px 20px;
@@ -56,6 +57,7 @@
 
     .voltar-para-o-topo-mobile {
       background-color: #f38734;
+      // display: none;
 
       svg {
         color: #fff;
