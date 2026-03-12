@@ -12,43 +12,52 @@ export default function Sobre() {
     const [count56, setCount56] = useState(0);
 
     const sectionRef = useRef<HTMLDivElement | null>(null);
-    const [started, setStarted] = useState(false);
+    const startedRef = useRef(false);
 
     function animateValue(
         setter: React.Dispatch<React.SetStateAction<number>>,
         finalValue: number,
         duration: number
-    ): void {
-        let start = 0;
-        const increment = finalValue / (duration / 16);
+    ) {
+        let startTimestamp: number | null = null;
 
-        const tick = () => {
-            start += increment;
-            if (start >= finalValue) {
-                setter(finalValue);
-            } else {
-                setter(Math.floor(start));
-                requestAnimationFrame(tick);
+        const step = (timestamp: number) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            const value = Math.floor(progress * finalValue);
+
+            setter(value);
+
+            if (progress < 1) {
+                requestAnimationFrame(step);
             }
         };
 
-        tick();
+        requestAnimationFrame(step);
     }
 
     useEffect(() => {
+
         const observer = new IntersectionObserver(
             (entries) => {
-                if (entries[0].isIntersecting && !started) {
-                    setStarted(true);
 
-                    // Milessegundos, por exemplo: 3000ms para 20, 3500ms para 134, etc.
-                    animateValue(setCount5, 5, 3000);
-                    animateValue(setCount134, 134, 3500);
-                    animateValue(setCount60, 60, 3200);
-                    animateValue(setCount56, 5600, 3800);
+                if (entries[0].isIntersecting && !startedRef.current) {
+
+                    startedRef.current = true;
+
+                    animateValue(setCount5, 5, 2000);
+                    animateValue(setCount134, 134, 2200);
+                    animateValue(setCount60, 60, 2000);
+                    animateValue(setCount56, 5600, 2400);
+
+                    observer.disconnect();
                 }
+
             },
-            { threshold: 0.8 } // Inicia a animação quando 70% da seção estiver visível ou a porcentagem que preferir
+            {
+                threshold: 0.15, // funciona bem em mobile
+            }
         );
 
         if (sectionRef.current) {
@@ -56,7 +65,8 @@ export default function Sobre() {
         }
 
         return () => observer.disconnect();
-    }, [started]);
+
+    }, []);
 
     return (
         <section className="sessao-sobre" id="quem-somos" ref={sectionRef}>
@@ -75,6 +85,7 @@ export default function Sobre() {
                 </div>
 
                 <div className="coluna-texto">
+
                     <span className="etiqueta-sobre">Sobre nós</span>
 
                     <h2 className="titulo-sobre">
@@ -89,7 +100,9 @@ export default function Sobre() {
                         Trabalhamos com tecnologia de ponta e projetos personalizados, garantindo instalações seguras, alto desempenho e resultados reais desde o primeiro dia.
                     </p>
 
-                    <a href="/projetos" className="botao-sobre">Ver mais</a>
+                    <a href="/projetos" className="botao-sobre">
+                        Ver mais
+                    </a>
 
                     <div className="metricas">
 
@@ -114,6 +127,7 @@ export default function Sobre() {
                         </div>
 
                     </div>
+
                 </div>
             </div>
         </section>
