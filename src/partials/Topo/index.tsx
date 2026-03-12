@@ -15,7 +15,7 @@ import { useEffect, useState } from "react";
 import { josefinSans } from "@/lib/fonts";
 import HamburgerMenu from "@/components/HamburgerMenu";
 
-const { numeroTelefone, numeroWhatsapp, ddd, whatsappApi, email } = settings;
+const { numeroWhatsapp, ddd, whatsappApi, email } = settings;
 
 export default function Topo() {
   const [isFixed, setIsFixed] = useState(false);
@@ -39,10 +39,14 @@ export default function Topo() {
     setIsMenuOpen((prev) => !prev);
   };
 
+  // ADIÇÃO
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header>
       <div className={isFixed ? "topo fixed" : "topo"}>
-
         <div className="topo-contato">
           <div className={`base ${josefinSans.className}`}>
             {/* <Link href={`tel:0${ddd}${numeroTelefone}`} target="_blank">
@@ -63,7 +67,6 @@ export default function Topo() {
 
         <div className="topo-menu">
           <div className="base">
-
             <Link href="/" className="logo-wrapper">
               <Image
                 src="/logo.webp"
@@ -82,7 +85,6 @@ export default function Topo() {
               <li className="topo-item"><Link href="/#onde-instalar">Onde instalar</Link></li>
               <li className="topo-item"><Link href="/projetos">Projetos</Link></li>
               <li className="topo-item"><Link href="/informacoes">.</Link></li>
-              {/* <li className="topo-item"><Link href="/servicos">Serviços</Link></li> */}
             </ul>
 
             <Link href="/contato" className="botao-contato">
@@ -97,12 +99,12 @@ export default function Topo() {
       {/* MENU MOBILE */}
       <div className={`menu-mobile ${isMenuOpen ? "open" : ""}`}>
         <ul className="topo-links-mobile">
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="/#quem-somos">Quem Somos</Link></li>
-          <li><Link href="/#baneficios">Benefícios</Link></li>
-          <li><Link href="/#onde-instalar">Onde instalar</Link></li>
-          <li><Link href="/projetos">Projetos</Link></li>
-          <li><Link href="/informacoes">.</Link></li>
+          <li><Link href="/" onClick={closeMenu}>Home</Link></li>
+          <li><Link href="/#quem-somos" onClick={closeMenu}>Quem Somos</Link></li>
+          <li><Link href="/#baneficios" onClick={closeMenu}>Benefícios</Link></li>
+          <li><Link href="/#onde-instalar" onClick={closeMenu}>Onde instalar</Link></li>
+          <li><Link href="/projetos" onClick={closeMenu}>Projetos</Link></li>
+          <li><Link href="/informacoes" onClick={closeMenu}>.</Link></li>
         </ul>
       </div>
     </header>
