@@ -1,0 +1,220 @@
+.containerServices {
+  width: 100%;
+  height: auto;
+  margin: 4rem auto 6rem;
+  transition: 0.3s ease-in-out;
+}
+.containerServices .parent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 4px;
+  width: 80%;
+  height: auto;
+  margin: 2rem auto;
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  .containerServices .parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.containerServices .parent .div1 {
+  grid-area: 1/1/3/3;
+}
+.containerServices .parent .div2 {
+  grid-area: 3/1/6/3;
+}
+.containerServices .parent .div3 {
+  grid-area: 1/3/2/5;
+}
+.containerServices .parent .div4 {
+  grid-area: 2/3/4/5;
+}
+.containerServices .parent .div5 {
+  grid-area: 4/3/6/5;
+}
+.containerServices .parent .div6 {
+  grid-area: 1/5/4/7;
+}
+.containerServices .parent .div7 {
+  grid-area: 4/5/6/7;
+}
+.containerServices .div1,
+.containerServices .div2,
+.containerServices .div3,
+.containerServices .div4,
+.containerServices .div5,
+.containerServices .div6,
+.containerServices .div7 {
+  padding: 3rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.7rem;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  .containerServices .div1,
+  .containerServices .div2,
+  .containerServices .div3,
+  .containerServices .div4,
+  .containerServices .div5,
+  .containerServices .div6,
+  .containerServices .div7 {
+    flex: 1 1 100%;
+    grid-area: unset;
+    padding: 4rem;
+  }
+}
+
+.textosProjetos {
+  width: 90%;
+  margin: 3rem auto 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.textosProjetos .texto {
+  background: #f7f7f7;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #000;
+  width: 48%;
+}
+.textosProjetos .texto h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+}
+.textosProjetos .texto p {
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 1024px) {
+  .textosProjetos .texto {
+    width: 48%;
+  }
+}
+@media (max-width: 768px) {
+  .textosProjetos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .textosProjetos .texto {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .textosProjetos .texto {
+    width: 100%;
+    padding: 1rem;
+  }
+  .textosProjetos .texto h3 {
+    font-size: 1.2rem;
+  }
+  .textosProjetos .texto p {
+    font-size: 0.85rem;
+  }
+}
+
+.containerGaleria {
+  width: 90%;
+  margin: 0 auto 4rem;
+  text-align: center;
+  cursor: pointer;
+}
+.containerGaleria h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+}
+.containerGaleria .galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.containerGaleria .itemGaleria {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.containerGaleria .itemGaleria:hover {
+  transform: scale(1.05);
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  background: #f4bc33;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalContent img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+.modalContent .btnFechar {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.modalContent .btnLeft,
+.modalContent .btnRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0.3rem;
+  transition: background 0.3s;
+}
+.modalContent .btnLeft:hover,
+.modalContent .btnRight:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+.modalContent .btnLeft {
+  left: 10px;
+}
+.modalContent .btnRight {
+  right: 10px;
+}

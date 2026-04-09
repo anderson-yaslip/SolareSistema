@@ -5,7 +5,10 @@
   width: -moz-fit-content;
   width: fit-content;
   gap: 20px;
-  font-family: var(--font-open-sans);
+  border: 1px solid #f4bc33;
+  padding: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
 }
 @media (max-width: 840px) {
   .contatoForm {
@@ -73,16 +76,15 @@
   border: none;
   border-radius: 5px;
   font-size: 1.1rem;
-  background-color: #4a2fe0;
+  background-color: #66a587;
   color: white;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: "Nunito", sans-serif;
 }
 .contatoForm .btnSubmit:hover {
-  background-color: #6a46fc;
   transition: all 0.3s ease;
-  color: #f4eef6;
 }
 
 .formSuccess {

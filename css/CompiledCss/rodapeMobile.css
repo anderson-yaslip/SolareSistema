@@ -20,6 +20,7 @@
 .rodape-mobile .icones-rodape {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .rodape-mobile .icones-rodape a {
   margin: 5px 20px;

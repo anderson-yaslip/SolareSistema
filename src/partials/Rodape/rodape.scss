@@ -240,8 +240,7 @@ footer {
   bottom: 118px;
   right: 46px;
   position: fixed;
-  background: url("/selos/WhatsAppButton.webp") center center no-repeat
-    rgba(30, 30, 30, 0.1);
+  background: url("/selos/WhatsAppButton.webp") center center no-repeat rgba(30, 30, 30, 0.1);
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
@@ -289,6 +288,7 @@ footer {
 }
 
 @-webkit-keyframes tada {
+
   from,
   to {
     -webkit-transform: scale3d(1, 1, 1);
@@ -318,6 +318,7 @@ footer {
 }
 
 @keyframes tada {
+
   from,
   to {
     -webkit-transform: scale3d(1, 1, 1);

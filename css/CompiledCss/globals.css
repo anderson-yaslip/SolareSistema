@@ -63,3 +63,21 @@ ol {
   transition: all 0.3s ease !important;
   width: 256px !important;
 }
+
+/* Chrome, Edge e Safari */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f5bd33; /* parte que desliza */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e0a91f; /* hover opcional */
+}

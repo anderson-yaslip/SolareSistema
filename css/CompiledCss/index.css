@@ -335,7 +335,8 @@
     width: 100%;
   }
 }
-.containerBanner .containerBannerOne div button {
+.containerBanner .containerBannerOne div button,
+.containerBanner .containerBannerOne div .linkVerMais {
   width: 20%;
   padding: 1rem;
   margin-left: 2rem;
@@ -348,16 +349,20 @@
   font-family: "Montserrat", sans-serif;
   border: 1px solid #fff;
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
-.containerBanner .containerBannerOne div button:hover {
+.containerBanner .containerBannerOne div button:hover,
+.containerBanner .containerBannerOne div .linkVerMais:hover {
   transform: scale(1.1);
   background-color: #f5bd33;
 }
-.containerBanner .containerBannerOne div button {
+.containerBanner .containerBannerOne div button,
+.containerBanner .containerBannerOne div .linkVerMais {
   transition: 0.3s ease-in-out;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .containerBanner .containerBannerOne div button {
+  .containerBanner .containerBannerOne div button,
+  .containerBanner .containerBannerOne div .linkVerMais {
     width: 80%;
     margin: 2rem auto 0;
   }
@@ -507,9 +512,9 @@
   flex-direction: column;
 }
 .container-contato .base .box-title .title {
-  font-family: var(--font-poppins);
+  font-family: "Nunito", sans-serif;
   font-size: 3rem;
-  color: #6a46fc;
+  color: #000;
   margin-bottom: 10px;
 }
 @media (max-width: 768px) {
@@ -518,10 +523,10 @@
   }
 }
 .container-contato .base .box-title .description {
-  font-size: 1.5rem;
-  color: #2e2e2e;
-  font-weight: 500;
-  line-height: 1.3rem;
+  font-size: 1.2rem;
+  color: #000;
+  line-height: 1.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 .container-contato .base .box-details {
   display: flex;
@@ -539,6 +544,7 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 20px;
+  gap: 1.2rem;
 }
 .container-contato .base .box-details .contact a {
   display: flex;
@@ -546,9 +552,20 @@
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px 0;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   align-items: center;
   color: rgb(63, 63, 63);
+  border: 1px solid #000;
+  background-color: #fff5e4;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 .container-contato .base .box-details .contact a svg {
   color: rgb(43, 43, 43);
@@ -556,11 +573,9 @@
   transition: all 0.3s ease;
 }
 .container-contato .base .box-details .contact a:hover {
-  color: #4824aa;
   transition: all 0.3s ease;
 }
 .container-contato .base .box-details .contact a:hover svg {
-  color: #8d68c8;
   transition: all 0.3s ease;
 }
 .container-contato iframe {
@@ -596,10 +611,10 @@
   flex-direction: column;
 }
 .included-form .base .box-title .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito", sans-serif;
   letter-spacing: 1px;
   font-size: 3rem;
-  color: #f38734;
+  color: #000;
   margin-bottom: 10px;
 }
 @media (max-width: 768px) {
@@ -647,10 +662,9 @@
 }
 .included-form .base .box-details .contact a svg {
   font-size: 23px;
-  color: #ff8b2c;
+  color: #000;
 }
 .included-form .base .box-details .contact a:hover {
-  color: #ff8b2c;
   transition: all 0.3s ease;
 }
 .included-form .base .box-details .contact a:hover svg {
