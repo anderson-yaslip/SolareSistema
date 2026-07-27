@@ -24,7 +24,7 @@ export default function Banner() {
             </Link>
           </div>
 
-          <h2>Energia Solar para um Futuro Mais Inteligente</h2>
+          <h2>Energia Solar para um Futuro Mais Inteligente.</h2>
           <div className="containerText">
             <p>Transforme a luz do sol em economia real e sustentável. A Solare Sistemas oferece soluções completas em energia fotovoltaica para residências, empresas e indústrias, entregando segurança, eficiência e redução imediata na sua conta de luz.</p>
             {/* <button>Ver mais</button> */}
